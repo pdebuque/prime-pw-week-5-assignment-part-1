@@ -10,13 +10,14 @@ console.log('***** Object Practice *****')
 */
 const me = {
   // TODO - add properties here
-  firstName:'Paolo',
+  firstName: 'Paolo',
   lastName: 'Debuque',
   hasSiblings: true,
   shoeCount: 12,
-  favThreeFoods: ['ramen','paella','fried rice']
+  favThreeFoods: ['ramen', 'paella', 'fried rice']
 };
-console.log('A little about me:', me);
+
+console.log('1. A little about me:', me);
 
 /* 2. Accessing object properties.
   - Create a variable called fullName 
@@ -25,8 +26,8 @@ console.log('A little about me:', me);
   - Console.log fullName
 */
 
-const fullName=me.firstName+me.lastName;
-console.log(fullName);
+const fullName = me.firstName + me.lastName;
+console.log('2. My full name is ' + fullName);
 
 
 /* 3. Nested arrays
@@ -34,8 +35,8 @@ console.log(fullName);
   - Console.log your last favorite food 
 */
 
-console.log(me.favThreeFoods[0]);
-console.log(me.favThreeFoods[2]);
+console.log(`3a. My first favorite food is ${me.favThreeFoods[0]}`);
+console.log(`3b. My third favorite food is ${me.favThreeFoods[2]}`);
 
 
 
@@ -46,9 +47,9 @@ console.log(me.favThreeFoods[2]);
   - Console.log your updated shoe count. 
 */
 
-console.log(me.shoeCount);
+console.log(`4a. My old shoe count was ${me.shoeCount}`);
 me.shoeCount++;
-console.log(me.shoeCount);
+console.log(`4. My new shoe count is ${me.shoeCount}`);
 
 
 /* 5. Add a new property to an existing object.
@@ -58,6 +59,6 @@ console.log(me.shoeCount);
   - Console.log your object
 */
 
-me.favoriteColor='blue'
-console.log(me.favoriteColor);
-console.log(me);
+me.favoriteColor = 'blue'
+console.log(`5a. My favorite color is ${me.favoriteColor}`);
+console.log(`5b. This is me: `, me);
